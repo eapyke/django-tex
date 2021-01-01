@@ -33,6 +33,7 @@ def run_tex_in_directory(source, directory, template_name=None):
                 os.path.join(directory, "texput.log"), "r", encoding="utf-8"
             ) as f:
                 log = f.read()
+                print(log)
         except FileNotFoundError:
             raise called_process_error
         else:

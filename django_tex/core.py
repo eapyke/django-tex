@@ -16,7 +16,6 @@ def run_tex(source, template_name=None):
 
 
 def run_tex_in_directory(source, directory, template_name=None):
-    print("the fork")
     filename = "texput.tex"
     command = getattr(settings, "LATEX_INTERPRETER", DEFAULT_INTERPRETER)
     latex_interpreter_options = getattr(settings, "LATEX_INTERPRETER_OPTIONS", "")
